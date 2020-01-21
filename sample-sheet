@@ -1,0 +1,28 @@
+// I used this while trying to figure out how to get the indexing to work
+
+{"Sheet1": 
+    [
+        ["Term 1"], 
+        ["student", "Subjects"], 
+        ["", "Algebra", "Physics", "PE", "Chemistry", "Geometry", "Biology", "Programming"], 
+        ["Sundar Pichai", 87, 63, 70, 45, 90, 53, 95], 
+        ["Elon Musk", 90, 100, 36, 62, 74, 42, 78], 
+        ["Bill Gates", 75, 84, 45, 65, 92, 57, 100], 
+        ["Jeff Bezos", 43, 76, 62, 53, 73, 32, 64], 
+        ["Mark Zuckerberg", 23, 43, 52, 45, 47, 53, 70], 
+        ["Warren Buffet", 68, 73, 93, 72, 84, 28, 63], 
+        ["Jack Ma", 52, 87, 94, 86, 78, 69, 90], 
+        ["Michael Jordan", 24, 18, 100, 43, 75, 40, 10], 
+        ["Cristiaono Ronaldo", 52, 42, 100, 34, 52, 28, 6], 
+        ["Tim Cook", 67, 83, 62, 34, 63, 54, 90], 
+        ["Johnney Depp", 56, 73, 65, 87, 45, 63, 75], 
+        ["Robert Downey", 34, 54, 73, 14, 64, 37, 82], 
+        ["Lionel Messi", 64, 34, 99, 53, 82, 42, 33], 
+        ["Neil Armstrong", 95, 84, 80, 92, 84, 60, 42], 
+        ["Will Smith", 38, 53, 62, 47, 54, 73, 46], 
+        ["Isaac newton", 93, 100, 78, 53, 63, 43, 67], 
+        [], 
+        [], 
+        []
+    ]
+}
