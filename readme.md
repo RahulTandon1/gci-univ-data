@@ -50,5 +50,5 @@ To use any other data sets please place it in ```sample-data``` or alternatively
 - First two rows always avoid
 - Order of stubjects:
 Algebra	Physics	PE	Chemistry	Geometry	Biology	Programming
-- Mark which would be in fraction form come in decimial form
-- **Was initially calculating averga but realised it doesn't matter because it will be relative in the end**
+- Marks which would be in fraction form come in decimial form
+- Not calculating avg resulting in error and calculating it got correct ans, so finding avg. Apparently, it was all relative in the end

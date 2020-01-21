@@ -9,21 +9,14 @@ A file/module consisting of functions used in index.py
 Exaple of how a student dictionary will like by the end of the program:
 {
     'name': 'Isaac newton',
-    'total_of_term1': 753.0,
-    'total_of_term2': 701.0,
-    'total_of_term3': 716.0,
-    'total_of_term4': 606.0,
-    'total_of_ielts': 32.0,
-    'total_of_interview': 23.0
+    'avg_of_term1': 753.0,
+    'avg_of_term2': 701.0,
+    'avg_of_term3': 716.0,
+    'avg_of_term4': 606.0,
+    'avg_of_ielts': 32.0,
+    'avg_of_interview': 23.0
 }
 '''
-
-# NOTE
-# calculating TOTAL and not average
-# because it will be relative in the end
-# and division would become yet another computational task
-# hence avoiding it
-
 
 # takes input of students list (empty at this point in the code)
 # and the data of any term, we'll be passing in term1's data in this program
@@ -93,13 +86,11 @@ def setUpTermMarks(students, term_data, term_index):
                 term_total += float(currentStudent[i])
 
         # --- adding term average to student dictionary ---
-
-        # dividing by 1000 because maths & phyics got double weightage
-        #term_avg = term_total / 1000
-
         # students index == index - 3
         # e.g. Sundar Pichar position in students = 3 - (3) = 0
-        students[index - 3][f'total_of_term{term_index}'] = term_total
+        # assigning average | avergae = total / (10 subjs * 100 marks each)
+        # 10 subjs because maths(2 internal subjs) and physics got 2X value
+        students[index - 3][f'avg_of_term{term_index}'] = term_total/1000
 
     return students
 
@@ -128,6 +119,11 @@ def setUpData(students, data, dataType):
 
         # students index == index - 3
         # e.g. Sundar Pichar position in students = 3 - (3) = 0
-        students[index - 3][f'total_of_{dataType}'] = tempTotal
+        if dataType == 'ielts':
+            # assigning average | avergae = total / (4 subjs * 9 marks each)
+            students[index - 3][f'avg_of_{dataType}'] = tempTotal/36
+        else:
+            # assigning average | avergae = total / ( 5 subjs * 10 marks each)
+            students[index - 3][f'avg_of_{dataType}'] = tempTotal/50
 
     return students

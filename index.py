@@ -87,7 +87,9 @@ def final_scores(student):
 
 
 # sorting students
-students.sort(key=final_scores)
+# figured out reverse = True i.e. descending order
+# so greatest final_score comes first
+students.sort(key=final_scores, reverse=True)
 
 # writing students to file
 f = open('output.txt', 'w')
