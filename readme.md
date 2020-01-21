@@ -2,6 +2,11 @@
 GCI Task description here:
 https://codein.withgoogle.com/tasks/5901948314714112
 
+TL;DR
+Given input of evalutions of students/applicants in the form of ".ods" files, 
+sort the applicants from best to worst and write it to a txt file/.ods file
+// I just chose .txt file cause it was easier for me to be honest. Plus I was doing the task last minute.
+
 **Given Variability**
 ODF files with different 
 - names, 
