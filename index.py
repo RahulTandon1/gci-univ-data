@@ -70,12 +70,12 @@ So we'll just be multiplying with the respective scores to get the final score
 # them from best to worst
 for student in students:
 
-    academic_total = (student['total_of_term1'] +
-                      student['total_of_term2'] +
-                      student['total_of_term3'] +
-                      student['total_of_term4']) * 40
-    ielts_total = student['total_of_ielts'] * 30
-    interview_total = student['total_of_interview'] * 30
+    academic_total = (student['avg_of_term1'] +
+                      student['avg_of_term2'] +
+                      student['avg_of_term3'] +
+                      student['avg_of_term4']) * 40
+    ielts_total = student['avg_of_ielts'] * 30
+    interview_total = student['avg_of_interview'] * 30
 
     final_score = academic_total + ielts_total + interview_total
     student['final_score'] = final_score
